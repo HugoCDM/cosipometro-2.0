@@ -13,33 +13,23 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Cosipômetro</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
 
-        <script src="/js/script.js"></script>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N2RPMMTF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
+    <script src="/js/script.js"></script>
 
-            gtag('config', 'G-W4N2RPMMTF');
-        </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N2RPMMTF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <script src="/js/script.js"></script>
+        gtag('config', 'G-W4N2RPMMTF');
+    </script>
 
-    </head>
+    <script src="/js/script.js"></script>
+
+</head>
 
 <body>
 
@@ -74,7 +64,23 @@
 
     <header>
         <div class="header">
-            <h1>Cosipômetro</h1>
+
+            <div class="titulo-flex">
+                <h1>Cosipômetro 2.0</h1>
+                <div class="tooltip">
+                    <span class="tooltip-text">De acordo com a emenda ao texto do PL 971/2025, foram feitas as seguintes
+                        alterações:<br><br>• Ampliação da <b>isenção</b> para a faixa de consumo de <b>100 kWh até
+                            120 kWh</b> <br><br>
+                        • <b>Desconto de 5%</b> para a faixa de consumo de <b>120 kWh até 140 kWh</b>, por meio da
+                        redução no Valor
+                        Fixo e Coeficiente; <br><br>
+                        • <b>Teto máximo de R$ 5 mil na cobrança da COSIP.</b></span>
+                    <span><i class="fa-solid fa-circle-info"></i></span>
+                </div>
+
+
+            </div>
+
             <p>Veja quanto você pagará pela sua luz!</p>
             <div class="input-section">
                 <input type="text" name="kwh" id="kwh" placeholder="Consumo total em kWh">
@@ -233,6 +239,7 @@
         <div class="tabela-conta-luz">
             <div class="cosip-atual">
                 <h3>Comparativo da Taxa de Iluminação</h3>
+
             </div>
 
             <div class="bandeiras">

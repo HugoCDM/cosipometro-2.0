@@ -72,10 +72,10 @@ function insertValues() {
     
 
     // Total Nova Cosip por bandeira
-    let totalNovaCosipVerde = (valorbaseCosipVerde + acrescimoBandeiraCosipVerde);
-    let totalNovaCosipAmarela = (valorbaseCosipAmarela + acrescimoBandeiraCosipAmarela);
-    let totalNovaCosipVermelha1 = (valorbaseCosipVermelha1 + acrescimoBandeiraCosipVermelha1);
-    let totalNovaCosipVermelha2 = (valorbaseCosipVermelha2 + acrescimoBandeiraCosipVermelha2);
+    let totalNovaCosipVerde = (valorbaseCosipVerde + acrescimoBandeiraCosipVerde)  <= 5000 ? (valorbaseCosipVerde + acrescimoBandeiraCosipVerde) : 5000;
+    let totalNovaCosipAmarela = (valorbaseCosipAmarela + acrescimoBandeiraCosipAmarela) <= 5000 ? (valorbaseCosipAmarela + acrescimoBandeiraCosipAmarela)  : 5000;
+    let totalNovaCosipVermelha1 = (valorbaseCosipVermelha1 + acrescimoBandeiraCosipVermelha1) <= 5000 ? (valorbaseCosipVermelha1 + acrescimoBandeiraCosipVermelha1)  : 5000;
+    let totalNovaCosipVermelha2 = (valorbaseCosipVermelha2 + acrescimoBandeiraCosipVermelha2) <= 5000 ? (valorbaseCosipVermelha2 + acrescimoBandeiraCosipVermelha2)  : 5000;
 
     // Diferença entre a COSIP atual e a nova COSIP por bandeira
     let diferencaCosipVerde = (totalNovaCosipVerde - cosipAtualVerde).toFixed(2);
@@ -303,10 +303,10 @@ window.addEventListener('DOMContentLoaded', async () => {
     });
 
     try {
-        const response1 = await fetch('json/cosipometro_tabela_faixa.json')
+        const response1 = await fetch('json/cosipometro_tabela_faixa_2_0.json')
         faixaTable = await response1.json();
 
-        const response2 = await fetch('json/cosipometro_tabela_faixa_atual_bandeiras.json')
+        const response2 = await fetch('json/cosipometro_tabela_faixa_atual_bandeiras_2_0.json')
         faixaAtualTable = await response2.json();
     } catch (error) {
         console.error(error);
