@@ -1,0 +1,436 @@
+[
+  {
+    "Faixa de Consumo (kWh)":"0 até 100",
+    "Mínimo":0,
+    "Máximo":100,
+    "valorFixo":0.0,
+    "Coeficiente":0.0
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 100 até 120",
+    "Mínimo":101,
+    "Máximo":120,
+    "valorFixo":0.0,
+    "Coeficiente":0.0
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 120 até 140",
+    "Mínimo":121,
+    "Máximo":140,
+    "valorFixo":2.65,
+    "Coeficiente":0.00572
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 140 até 170",
+    "Mínimo":141,
+    "Máximo":170,
+    "valorFixo":3.98,
+    "Coeficiente":0.00857
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 170 até 200",
+    "Mínimo":171,
+    "Máximo":200,
+    "valorFixo":6.2,
+    "Coeficiente":0.01602
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 200 até 250",
+    "Mínimo":200,
+    "Máximo":250,
+    "valorFixo":7.29,
+    "Coeficiente":0.01879
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 250 até 300",
+    "Mínimo":250,
+    "Máximo":300,
+    "valorFixo":9.11,
+    "Coeficiente":0.02349
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 300 até 350",
+    "Mínimo":301,
+    "Máximo":350,
+    "valorFixo":17.01,
+    "Coeficiente":0.04386
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 350 até 400",
+    "Mínimo":351,
+    "Máximo":400,
+    "valorFixo":19.84,
+    "Coeficiente":0.05117
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 400 até 450",
+    "Mínimo":401,
+    "Máximo":450,
+    "valorFixo":22.66,
+    "Coeficiente":0.05839
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 450 até 500",
+    "Mínimo":451,
+    "Máximo":500,
+    "valorFixo":25.5,
+    "Coeficiente":0.06568
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 500 até 550",
+    "Mínimo":501,
+    "Máximo":550,
+    "valorFixo":28.31,
+    "Coeficiente":0.07298
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 550 até 600",
+    "Mínimo":551,
+    "Máximo":600,
+    "valorFixo":31.14,
+    "Coeficiente":0.08028
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 600 até 650",
+    "Mínimo":601,
+    "Máximo":650,
+    "valorFixo":33.97,
+    "Coeficiente":0.08754
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 650 até 700",
+    "Mínimo":651,
+    "Máximo":700,
+    "valorFixo":36.8,
+    "Coeficiente":0.09484
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 700 até 750",
+    "Mínimo":701,
+    "Máximo":750,
+    "valorFixo":39.63,
+    "Coeficiente":0.10213
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 750 até 800",
+    "Mínimo":751,
+    "Máximo":800,
+    "valorFixo":42.46,
+    "Coeficiente":0.10942
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 800 até 850",
+    "Mínimo":801,
+    "Máximo":850,
+    "valorFixo":45.29,
+    "Coeficiente":0.11672
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 850 até 900",
+    "Mínimo":851,
+    "Máximo":900,
+    "valorFixo":48.12,
+    "Coeficiente":0.12401
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 900 até 950",
+    "Mínimo":901,
+    "Máximo":950,
+    "valorFixo":50.95,
+    "Coeficiente":0.13131
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 950 até 1000",
+    "Mínimo":951,
+    "Máximo":1000,
+    "valorFixo":53.78,
+    "Coeficiente":0.1386
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 1.000 até 1.500",
+    "Mínimo":1001,
+    "Máximo":1500,
+    "valorFixo":56.6,
+    "Coeficiente":0.14591
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 1.500 até 2.000",
+    "Mínimo":1501,
+    "Máximo":2000,
+    "valorFixo":84.89,
+    "Coeficiente":0.21887
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 2.000 até 2.500",
+    "Mínimo":2001,
+    "Máximo":2500,
+    "valorFixo":113.19,
+    "Coeficiente":0.29182
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 2.500 até 3.000",
+    "Mínimo":2501,
+    "Máximo":3000,
+    "valorFixo":141.48,
+    "Coeficiente":0.36478
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 3.000 até 3.500",
+    "Mínimo":3001,
+    "Máximo":3500,
+    "valorFixo":169.78,
+    "Coeficiente":0.43766
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 3.500 até 4.000",
+    "Mínimo":3501,
+    "Máximo":4000,
+    "valorFixo":198.08,
+    "Coeficiente":0.5106
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 4.000 até 4.500",
+    "Mínimo":4001,
+    "Máximo":4500,
+    "valorFixo":226.33,
+    "Coeficiente":0.58337
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 4.500 até 5.000",
+    "Mínimo":4501,
+    "Máximo":5000,
+    "valorFixo":254.62,
+    "Coeficiente":0.65629
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 5.000 até 5.500",
+    "Mínimo":5001,
+    "Máximo":5500,
+    "valorFixo":282.86,
+    "Coeficiente":0.72914
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 5.500 até 6.000",
+    "Mínimo":5501,
+    "Máximo":6000,
+    "valorFixo":311.14,
+    "Coeficiente":0.80205
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 6.000 até 6.500",
+    "Mínimo":6001,
+    "Máximo":6500,
+    "valorFixo":339.38,
+    "Coeficiente":0.87495
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 6.500 até 7.000",
+    "Mínimo":6501,
+    "Máximo":7000,
+    "valorFixo":367.66,
+    "Coeficiente":0.94786
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 7.000 até 7.500",
+    "Mínimo":7001,
+    "Máximo":7500,
+    "valorFixo":395.96,
+    "Coeficiente":1.02074
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 7.500 até 8.000",
+    "Mínimo":7501,
+    "Máximo":8000,
+    "valorFixo":424.24,
+    "Coeficiente":1.09365
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 8.000 até 8.500",
+    "Mínimo":8001,
+    "Máximo":8500,
+    "valorFixo":452.52,
+    "Coeficiente":1.1665
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 8.500 até 9.000",
+    "Mínimo":8501,
+    "Máximo":9000,
+    "valorFixo":480.8,
+    "Coeficiente":1.2394
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 9.000 até 9.500",
+    "Mínimo":9001,
+    "Máximo":9500,
+    "valorFixo":509.03,
+    "Coeficiente":1.31233
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 9.500 até 10.000",
+    "Mínimo":9501,
+    "Máximo":10000,
+    "valorFixo":537.31,
+    "Coeficiente":1.38523
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 10.000 até 12.500",
+    "Mínimo":10001,
+    "Máximo":12500,
+    "valorFixo":565.58,
+    "Coeficiente":1.45807
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 12.500 até 15.000",
+    "Mínimo":12501,
+    "Máximo":15000,
+    "valorFixo":706.98,
+    "Coeficiente":1.82259
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 15.000 até 17.500",
+    "Mínimo":15001,
+    "Máximo":17500,
+    "valorFixo":848.4,
+    "Coeficiente":2.18705
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 17.500 até 20.000",
+    "Mínimo":17501,
+    "Máximo":20000,
+    "valorFixo":989.8,
+    "Coeficiente":2.55156
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 20.000 até 22.500",
+    "Mínimo":20001,
+    "Máximo":22500,
+    "valorFixo":1131.2,
+    "Coeficiente":2.91607
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 22.500 até 25.000",
+    "Mínimo":22501,
+    "Máximo":25000,
+    "valorFixo":1272.59,
+    "Coeficiente":3.28058
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 25.000 até 27.500",
+    "Mínimo":25001,
+    "Máximo":27500,
+    "valorFixo":1414.01,
+    "Coeficiente":3.64515
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 27.500 até 30.000",
+    "Mínimo":27501,
+    "Máximo":30000,
+    "valorFixo":1555.41,
+    "Coeficiente":4.00966
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 30.000 até 32.500",
+    "Mínimo":30001,
+    "Máximo":32500,
+    "valorFixo":1696.81,
+    "Coeficiente":4.37418
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 32.500 até 35.000",
+    "Mínimo":32501,
+    "Máximo":35000,
+    "valorFixo":1838.21,
+    "Coeficiente":4.73869
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 35.000 até 37.500",
+    "Mínimo":35001,
+    "Máximo":37500,
+    "valorFixo":1979.61,
+    "Coeficiente":5.10321
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 37.500 até 40.000",
+    "Mínimo":37501,
+    "Máximo":40000,
+    "valorFixo":2121.01,
+    "Coeficiente":5.46772
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 40.000 até 42.500",
+    "Mínimo":40001,
+    "Máximo":42500,
+    "valorFixo":2262.38,
+    "Coeficiente":5.83218
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 42.500 até 45.000",
+    "Mínimo":42501,
+    "Máximo":45000,
+    "valorFixo":2403.78,
+    "Coeficiente":6.19669
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 45.000 até 47.500",
+    "Mínimo":45001,
+    "Máximo":47500,
+    "valorFixo":2545.18,
+    "Coeficiente":6.5612
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 47.500 até 50.000",
+    "Mínimo":47501,
+    "Máximo":50000,
+    "valorFixo":2686.58,
+    "Coeficiente":6.92572
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 50.000 até 62.500",
+    "Mínimo":50001,
+    "Máximo":62500,
+    "valorFixo":2827.96,
+    "Coeficiente":7.29031
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 62.500 até 75.000",
+    "Mínimo":62501,
+    "Máximo":75000,
+    "valorFixo":3534.95,
+    "Coeficiente":9.11289
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 75.000 até 87.500",
+    "Mínimo":75001,
+    "Máximo":87500,
+    "valorFixo":4241.94,
+    "Coeficiente":10.93546
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 87.500 até 100.000",
+    "Mínimo":87501,
+    "Máximo":100000,
+    "valorFixo":4948.93,
+    "Coeficiente":12.75804
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 100.000 até 150.000",
+    "Mínimo":100001,
+    "Máximo":150000,
+    "valorFixo":5655.72,
+    "Coeficiente":14.58039
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 150.000 até 200.000",
+    "Mínimo":150001,
+    "Máximo":200000,
+    "valorFixo":8483.58,
+    "Coeficiente":21.87059
+  },
+  {
+    "Faixa de Consumo (kWh)":"superior a 200.000 e acima",
+    "Mínimo":200001,
+    "Máximo":1000000000,
+    "valorFixo":11311.61,
+    "Coeficiente":29.16083
+  }
+]

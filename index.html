@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cosipômetro</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Cosipômetro</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <script src="/js/script.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N2RPMMTF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-W4N2RPMMTF');
+        </script>
+
+        <script src="/js/script.js"></script>
+
+    </head>
+
+<body>
+
+
+    <div id="popup">
+        <h2>Quer acompanhar as novidades do projeto? Informe seus dados abaixo.</h2>
+        <form method="POST" action="" id="form-acesso" name="formulario-contato">
+            <span class="close-btn">✖</span>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+            <input type="tel" name="whatsapp" id="telefone" placeholder="Whatsapp" required>
+            <input type="email" name="email" id="email" placeholder="Email (opcional)">
+            <label class="checkbox-label">
+                <input type="checkbox" id="checkbox1" required>
+                <span>
+                    Declaro que, nos termos da Lei Geral de Proteção de Dados Pessoais - Lei nº 13.709/2018 (LGPD),
+                    autorizo o tratamento dos meus dados pessoais pelo mandato Pedro Duarte, podendo revogar este
+                    consentimento a qualquer momento. Autorizo o registro e utilização dos meus dados para fins de
+                    comunicações institucionais
+                    relacionadas ao mandato Pedro Duarte. Autorizo o armazenamento dos meus dados pessoais pelo
+                    mandato Pedro Duarte, em
+                    conformidade com a LGPD.
+                </span>
+            </label>
+
+            <button type="submit">Enviar</button>
+            <p id="prosseguir-dados">Prosseguir sem fornecer meus dados.</p>
+        </form>
+    </div>
+
+
+
+    <header>
+        <div class="header">
+            <h1>Cosipômetro</h1>
+            <p>Veja quanto você pagará pela sua luz!</p>
+            <div class="input-section">
+                <input type="text" name="kwh" id="kwh" placeholder="Consumo total em kWh">
+                <button id="calcular" onclick="insertValues()">Calcular</button>
+            </div>
+            <img id="img-mobile" src="/img/banner-tarifaco-mobile-3.png" alt="" srcset="">
+        </div>
+    </header>
+
+
+
+
+    <section>
+        <div class="tabelas-cosip">
+            <div class="titulo-conta-luz">
+                <h3>Estimativa da Conta de Luz</h3>
+
+            </div>
+
+            <div class="bandeiras">
+                <div class="bandeiras-container">
+                    <div class="bandeira-verde bandeiras-propriedades">
+                        <h2>
+                            Bandeira verde
+                        </h2>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Conta de Luz COSIP atual:</span>
+                        <span id="total-conta-luz-cosip-verde" class="valor">R$ 0,00</span>
+                        <span class="span-total-cosip">Conta de Luz Nova COSIP:</span>
+                        <span id="total-conta-luz-nova-cosip-verde" class="valor">R$
+                            0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-conta-luz-cosips-verde">R$ 0,00
+                                </span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-conta-luz-cosips-verde">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-amarelo bandeiras-propriedades">
+
+                        <h2>
+                            Bandeira amarela
+                        </h2>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Conta de Luz COSIP atual:</span>
+                        <span id="total-conta-luz-cosip-amarela" class="valor">R$
+                            0,00</span>
+                        <span class="span-total-cosip">Conta de Luz Nova COSIP:</span>
+                        <span id="total-conta-luz-nova-cosip-amarela" class="valor">R$
+                            0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-conta-luz-cosips-amarela">R$ 0,00
+                                </span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-conta-luz-cosips-amarela">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+
+                    </div>
+                </div>
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-vermelha1 bandeiras-propriedades">
+                        <h2>
+                            Bandeira vermelha 1
+                        </h2>
+
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Conta de Luz COSIP atual:</span>
+                        <span id="total-conta-luz-cosip-vermelha1" class="valor">R$
+                            0,00</span>
+                        <span class="span-total-cosip">Conta de Luz Nova COSIP:</span>
+                        <span id="total-conta-luz-nova-cosip-vermelha1" class="valor">R$
+                            0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-conta-luz-cosips-vermelha1">R$ 0,00
+                                </span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-conta-luz-cosips-vermelha1">0%</span>
+                            </div>
+                        </div>
+
+                        <hr class="card-line">
+                    </div>
+                </div>
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-vermelha2 bandeiras-propriedades">
+                        <h2>
+                            Bandeira vermelha 2
+                        </h2>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Conta de Luz COSIP atual:</span>
+                        <span id="total-conta-luz-cosip-vermelha2" class="valor">R$
+                            0,00</span>
+                        <span class="span-total-cosip">Conta de Luz Nova COSIP:</span>
+                        <span id="total-conta-luz-nova-cosip-vermelha2" class="valor">R$ 0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-conta-luz-cosips-vermelha2">R$ 0,00
+                                </span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-conta-luz-cosips-vermelha2">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="tabela-conta-luz">
+            <div class="cosip-atual">
+                <h3>Comparativo da Taxa de Iluminação</h3>
+            </div>
+
+            <div class="bandeiras">
+                <div class="bandeiras-container">
+                    <div class="bandeira-verde bandeiras-propriedades">
+                        <h2>
+                            Bandeira verde
+                        </h2>
+                        <div class="tooltip">
+                            <span class="tooltip-text">• <b>TEIP de referência:</b> R$ 0,64018/kWh (Maio/2025).<br>
+                                • <b>Acréscimo da Bandeira (Nova COSIP):</b> R$ 0,00 (sem custo adicional).</span>
+                            <span><i class="fa-solid fa-circle-info"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Total COSIP atual:</span>
+                        <span id="total-cosip-verde" class="valor">R$ 0,00</span>
+                        <span class="span-total-cosip">Total Nova COSIP:</span>
+                        <span id="total-nova-cosip-verde" class="valor">R$ 0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-cosips-verde">
+                                    R$ 0,00</span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-cosips-verde">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-amarelo bandeiras-propriedades">
+
+                        <h2>
+                            Bandeira amarela
+                        </h2>
+                        <div class="tooltip">
+                            <span class="tooltip-text">• <b>TEIP de referência:</b> R$ 0,66709/kWh (Junho/2025).<br>
+                                • <b>Acréscimo da Bandeira (Nova COSIP):</b> R$ 0,01885 por kWh.</span>
+                            <span><i class="fa-solid fa-circle-info"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Total COSIP atual:</span>
+                        <span id="total-cosip-amarela" class="valor">R$ 0,00</span>
+                        <span class="span-total-cosip">Total Nova COSIP:</span>
+                        <span id="total-nova-cosip-amarela" class="valor">R$ 0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-cosips-amarela">R$ 0,00</span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-cosips-amarela">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+
+                    </div>
+                </div>
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-vermelha1 bandeiras-propriedades">
+                        <h2>
+                            Bandeira vermelha 1
+                        </h2>
+                        <div class="tooltip">
+                            <span class="tooltip-text">• <b>TEIP de referência:</b> R$ 0,69728/kWh (Julho/2025).<br>
+                                • <b>Acréscimo da Bandeira (Nova COSIP):</b> R$ 0,04463 por kWh.</span>
+                            <span><i class="fa-solid fa-circle-info"></i></span>
+                        </div>
+
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Total COSIP atual:</span>
+                        <span id="total-cosip-vermelha1" class="valor">R$ 0,00</span>
+                        <span class="span-total-cosip">Total Nova COSIP:</span>
+                        <span id="total-nova-cosip-vermelha1" class="valor">R$ 0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-cosips-vermelha1">R$ 0,00
+                                </span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-cosips-vermelha1">0%</span>
+                            </div>
+                        </div>
+
+                        <hr class="card-line">
+                    </div>
+                </div>
+
+                <div class="bandeiras-container">
+                    <div class="bandeira-vermelha2 bandeiras-propriedades">
+                        <h2>
+                            Bandeira vermelha 2
+                        </h2>
+                        <div class="tooltip">
+                            <span class="tooltip-text">• <b>TEIP de referência:</b> R$ 0,75746/kWh (Novembro/2024).<br>
+                                • <b>Acréscimo da Bandeira (Nova COSIP):</b> R$ 0,07877 por kWh.</span>
+                            <span><i class="fa-solid fa-circle-info"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="total-cosip-field">
+                        <span class="span-total-cosip">Total COSIP atual:</span>
+                        <span id="total-cosip-vermelha2" class="valor">R$ 0,00</span>
+                        <span class="span-total-cosip">Total Nova COSIP:</span>
+                        <span id="total-nova-cosip-vermelha2" class="valor">R$ 0,00</span>
+                        <hr class="card-line">
+                        <div class="container-diferenca-variacao">
+                            <div class="info-box">
+                                <span class="info-label">Diferença: </span>
+                                <span class="valor-diferenca" id="diferenca-cosips-vermelha2">R$ 0,00</span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-label variacao-label">Variação:</span>
+                                <span class="variacao-cor" id="variacao-cosips-vermelha2">0%</span>
+                            </div>
+                        </div>
+                        <hr class="card-line">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=5521998210030&text=Sou%20contra%20o%20tarifa%C3%A7o%20na%20conta%20de%20luz%20%F0%9F%92%A1"
+        target="_blank" rel="noopener noreferrer">
+        <div id="banner-manifesto"></div>
+    </a>
+
+
+    <section class="about-cosipometro">
+        <h2>Sobre o Cosipômetro</h2>
+        <p>O Cosipômetro é uma ferramenta desenvolvida para ajudar os consumidores a entenderem o impacto das
+            diferentes bandeiras tarifárias na sua conta de luz. Com ele, você pode calcular quanto pagará pela sua
+            energia elétrica com base no seu consumo em kWh e nas tarifas vigentes para cada bandeira (verde, amarela,
+            vermelha 1 e vermelha 2).
+            Esta ferramenta simula e compara a Contribuição para Custeio do Serviço de Iluminação Pública (COSIP) do Rio
+            de Janeiro, com base na lei atual (Lei 6311/2017) e nas novas regras propostas pelo Projeto de Lei nº
+            971/2025.
+        </p>
+        <h3>Como os cálculos são feitos ?</h3>
+        <p>COSIP Atual (Lei 6311/2017): O cálculo segue uma tabela de faixas de consumo com valores fixos e coeficientes
+            que são corrigidos anualmente. Nossa simulação utiliza os valores de referência já atualizados para cada
+            cenário de bandeira.
+        </p>
+        <p>Nova COSIP (Projeção - PL 971/2025): O cálculo é dividido em duas partes:
+            -Fórmula A (Valor-Base): Composta por uma parcela fixa e uma variável, que multiplica um "Coeficiente" pelo
+            valor da TEIP.
+            -Fórmula B (Acréscimo da Bandeira): Utiliza o mesmo "Coeficiente" e o multiplica pelo valor adicional da
+            bandeira tarifária.
+
+        </p>
+
+        <h3>Glossário</h3>
+        <ul>
+            <li><strong>TEIP (Tarifa de Energia para Iluminição Pública):</strong> É a tarifa base da energia, sem o
+                custo extra das bandeiras.
+            </li>
+            <li><strong>Valor da Bandeira:</strong> É o custo adicional por kWh que reflete as condições de geração de
+                energia no país.
+            </li>
+            <li><strong>Coeficiente:</strong> É um fator multiplicador definido por faixa de consumo que torna a
+                cobrança progressiva.</li>
+        </ul>
+
+        <h3>Estimativa da Conta de Luz</h3>
+        <p>Para simular o impacto no valor total da sua conta, utilizamos os seguintes dados de referência, baseados em
+            uma fatura da concessionária Light:
+        </p>
+        <ul>
+            <li><strong>Tarifa de Energia (sem impostos):</strong> R$ 0,86819 por kWh.</li>
+            <li><strong>Alíquotas de Impostos:</strong> PIS/COFINS (6,29%) e ICMS (18,00%).</li>
+        </ul>
+        <h3>Nota Técnica</h3>
+        <p>A fórmula do PL 971/2025 exige que o cálculo seja feito com a TEIP em Reais por Megawatt-hora
+            (R$/MWh). Para garantir a precisão, o valor da TEIP em R$/kWh de cada cenário foi multiplicado por 1.000
+            durante os cálculos.
+        </p>
+        <h3>Aviso legal</h3>
+        <p>Os valores apresentados são uma simulação. Os valores finais podem sofrer alterações caso a lei seja aprovada
+            com modificações ou se os valores da TEIP e das bandeiras forem atualizados pela ANEEL.
+        </p>
+
+
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/logo3.png" alt="Logo Vereador Pedro Duarte">
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 Cosipômetro. Todos os direitos reservados.</p>
+
+            </div>
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/pedroduarterio/" aria-label="Facebook" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/pedroduarterio" aria-label="Twitter" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/pedroduarterio/" aria-label="Instagram" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@PedroDuarteRio" aria-label="YouTube" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="http://wa.me/5521998210030" aria-label="Falecomigo - Pedro Duarte" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

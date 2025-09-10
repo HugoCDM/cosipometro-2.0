@@ -1,0 +1,1097 @@
+:root {
+    --azul: #0066CC;
+    --azul-escuro: #002157;
+    --titulo: #054f99;
+    --background: #dddbdb;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+html, body {
+    /* max-width: 100%; */
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+    
+    
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk';
+  src: url('/fonts/AktivGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.close-btn {
+   position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #666464;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+#popup {
+    display: none;
+    position: fixed;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    margin: 20px;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    
+}
+
+#popup h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+#popup input[type="text"], #popup input[type="tel"], #popup input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: .5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+#popup .checkbox-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin: .5rem 0;
+    max-height: 100px;
+    overflow-y: auto;
+    text-align: left;
+  }
+#checkbox1 {
+    margin-bottom: .4rem;
+    justify-content: left;
+    display: flex;
+}
+
+#popup button {
+    margin-top: .5rem;
+    padding: .8rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--azul);
+    color: #fff;
+}
+
+#popup button:hover {
+    background-color: #014283;
+}
+
+#prosseguir-dados {
+    opacity: 50%; 
+    margin-top: .5rem; 
+    cursor: pointer; 
+}
+
+#prosseguir-dados:hover {
+    color: rgb(3, 28, 139);
+    opacity: 100%;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    background-image: url('/img/banner-tarifaco-4.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    /* background-size: cover;  */
+    
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header .header {
+    
+    /* max-width: 5140px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: center;
+    margin: 0 auto;
+    
+
+}
+
+header .input-section {
+    background-color: rgb(233, 233, 235);
+    padding: 1.5rem 2rem;
+    border-radius: 2.5rem;
+    display: flex;
+    gap: .5rem; 
+    margin-top: 1rem;
+
+}
+
+
+header .input-section button {
+    width: 100%;
+    max-width: 90px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: var(--azul);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+
+}
+
+header .input-section button:hover {
+    background-color: var(--azul-escuro);
+    transition: ease-out .5s;
+}
+
+header .header h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+header .header p {
+    font-size: 1.4rem;
+    /* margin-top: -10px; */
+    color:  #ddd9d9
+}
+
+
+header .header input {
+    width: 100%;
+    max-width: 480px;
+    padding: 1rem 4rem 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    /* margin-top: .5rem; */
+    /* border-radius: 1.5rem; */
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    text-align: left;
+}
+
+#img-mobile {
+    display: none;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: var(--azul); */
+    max-width: 1640px;
+    width: 100%;
+    margin: 2rem auto;
+    
+
+} 
+
+ 
+.tabelas-cosip, .tabela-conta-luz {
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 25px;
+    width: 100%;
+    /* border: 1px #292828 solid; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 2rem;
+}
+
+
+
+.tabelas-cosip h3, .titulo-dados h3, .tabela-conta-luz h3 {
+    font-size: 1.8rem;
+}
+
+
+
+.cosip-atual, .nova-cosip, .titulo-conta-luz {
+    /* background-color: var(--titulo); */
+    width: 100%;
+    padding: 20px;
+    margin-top: 1rem;
+    
+    
+    
+    
+}
+
+
+
+.cosip-atual h3, .titulo-conta-luz h3{
+    text-align: left;
+    padding: 1rem;
+    color: #272626;
+    font-weight: 400;
+}
+
+
+.titulo-dados #btn-open-close {
+    position: absolute;
+    font-size: 5.5rem;
+    right: 0;
+    
+    transform: translateY(-38%);
+    margin-right: .5rem;
+    cursor: pointer;
+    
+    
+}
+.titulo-dados #btn-open-close:hover {
+    color: #000;
+    transition:ease-out .8s;
+}
+
+ 
+.nova-cosip {
+    margin-top: 2rem;
+}
+
+.tabela-conta-luz .valor-diferenca {
+    color: #d05656;
+    font-weight: 100;
+    
+}
+
+.tabelas-cosip .valor-diferenca {
+    color: #a10a0a;
+    font-weight: 100;
+}
+
+.bandeiras {
+    margin-top: 1.5rem; 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    font-family: 'Aktiv Grotesk';
+    padding: 0 50px;
+    
+    }
+
+.bandeiras h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* padding-right: 100px; */
+}
+
+
+
+
+.bandeiras-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: .75rem;
+    overflow: visible;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+.bandeiras-container:hover {
+    transition: ease-out .2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); 
+    
+}
+
+.bandeiras-container p {
+    margin: 3.5rem;
+    color: #000;
+    font-weight: 600;
+    width: 100%;    
+}
+
+
+.bandeiras-propriedades {
+    padding: 1rem;
+    display: flex;
+    justify-content:center;
+    gap: 1.5rem;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.75rem 0.75rem 0 0;
+    
+    
+}
+section i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: var(--azul-escuro);
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999; /* importante */
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Pequena seta no tooltip */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* seta aponta para baixo */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+
+
+
+.bandeira-verde {
+    background-color: rgb(52, 180, 52);
+
+    /* display: flex;
+    justify-content: space-between; */  
+    
+
+}
+.bandeira-amarelo {
+    background-color: #e5d30f;
+    
+    
+}
+.bandeira-vermelha1{
+   background-color: #dd1515;
+    
+}
+.bandeira-vermelha2{
+    background-color: #5c0101;
+    
+}
+
+.total-cosip-field{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    line-height: 0.7;
+    padding-bottom: 1rem;
+    
+    
+}
+
+
+
+
+.span-total-cosip {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 1rem 0 0 1rem;
+    color: #000;
+}
+
+.valor {
+    font-size: 1.6rem;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin-left: 1rem;
+    color: #404041;
+}
+
+.card-line {
+  border: none;
+  border-top: 1px solid #e9dfdf; /* cor da linha */
+  margin: 0 .2rem 0 1rem;
+  width: 100%;
+  max-width: 265px;
+  
+}
+
+
+
+.total {
+    
+    background-color: red;
+
+}
+
+.titulo {
+    font-family: 'Aktiv Grotesk';
+    font-size: 25px;
+}
+
+
+
+#secao-dados {
+    background-color: var(--background);  
+    padding-bottom: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+
+#secao-dados h2 {
+    font-weight: 200;
+    font-size: 1.3rem;
+    
+    padding: 1rem;
+    
+}
+
+.dados-container {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 4rem; 
+    
+}
+
+
+.valores-conta {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 370px;
+    max-height: 150px;
+    height: auto;
+    margin-left: .5rem;
+    padding: .5rem;
+    
+}
+
+.valores-conta span {
+    font-size: 40px;
+    line-height: .6;
+    
+    
+
+}
+
+.bandeira-valores {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    
+    
+}
+
+.bandeira-valores h4 {
+    margin-top: .3rem;
+    font-size: .92rem;
+    font-weight: 200;
+}
+
+.coluna-dados {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    max-width: 1390px;
+    
+    height: 500px;
+    
+
+    
+   
+}
+
+.coluna-dados img {
+    max-width: 1390px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+ 
+
+}
+
+.titulo-dados h3 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.diferenca-variacao-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.container-diferenca-variacao {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.info-box {
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 0 0 1rem;
+        
+}
+
+.variacao-cor, .valor-diferenca {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.info-label {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 100;
+    
+}
+.variacao-cor {
+    
+    color:#019e0e;
+}
+
+.tabela-conta-luz {
+    background-color: #02376b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1.25);
+
+}
+
+.tabela-conta-luz h3 {
+    color: #fff;
+}
+
+.tabela-conta-luz .bandeiras-container {
+    background-color: #033d77;
+}
+
+.tabela-conta-luz .valor {
+    color: #e7e6e6
+}
+
+.tabela-conta-luz .span-total-cosip {
+    color: #fff;
+}
+
+.tabela-conta-luz .info-label {
+    color: #fff;
+}
+
+.tabela-conta-luz .card-line {
+    border: 1px solid #014283;
+
+}
+
+
+/* footer {
+    background-color: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: .9rem;
+} */
+
+.about-cosipometro {
+    margin: .2rem auto;
+    /* background-color: rgb(119, 4, 4); */
+    padding: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Aktiv Grotesk' sans-serif;
+    width: 100%;
+}
+
+
+
+.about-cosipometro h2, .about-cosipometro h3 {
+    color: var(--azul-escuro);
+    margin: 1.5rem 0;
+    font-family: 'Barlow';
+}
+
+.about-cosipometro p, .about-cosipometro li {
+    font-size: 1.3rem;
+}
+
+.about-cosipometro h2 {
+    font-size: 3rem;
+   
+    display: inline-block;
+    
+}
+
+.about-cosipometro h3 {
+    font-size: 1.7rem;
+}
+
+.about-cosipometro ul {
+    margin: 10px 0 10px 20px;
+
+}
+
+#footer {
+    background-color: var(--azul-escuro);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    
+
+}
+
+.footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* gap: 20px; */
+    align-items: center;
+    
+}
+
+#footer img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #001020;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: .5rem;
+}
+.redes-sociais a{
+    color: #fff;
+    font-size: 1.2rem;
+    border: 3px #ccc solid;
+    border-radius:50%;
+    /* padding: .5rem; */
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.redes-sociais a:hover {
+    color: var(--azul);
+    background-color: #fff;
+}
+
+#banner-manifesto {
+  background-image: url('/img/banner-manifesto-3.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 2000px;
+  height: 250px;   /* altura fixa ou variável */
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+
+
+
+@media (min-width: 701px) and (max-width: 1330px) {
+    header {
+        background-image: none;
+        
+    }
+    
+    header .header {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+   
+
+    .bandeiras {
+    width: 100%;
+    display: grid;
+    max-width: 700px;   /* limite de largura total do grid */
+    margin: 1.5rem auto;     /* centraliza horizontalmente */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    text-align: left;
+    align-items: center;
+    font-family: 'Aktiv Grotesk';
+    line-height: 1;
+    justify-content: center;  
+    }
+
+    .bandeira-verde, .bandeira-amarelo, .bandeira-vermelha1, .bandeira-vermelha2 {
+    width: 100%;
+    max-width: 700px;
+    }
+
+    .span-total-cosip {
+        line-height: 1.2;
+    }
+    
+    
+    
+    #btn-open-close {
+    position: absolute;
+    font-size: 3.5rem;
+    right: 0;
+    transform: translateY(-40%);
+    margin-right: .5rem;
+    cursor: pointer;
+    
+    
+
+}
+    .bandeiras-container h2 {
+    font-size: 1.2rem;    
+    
+    
+}
+    
+    
+    
+
+    .bandeiras-container {
+        /* padding-right: 20px; */
+        margin-bottom: 1rem;
+        /* padding: 20px; */
+        
+             
+       
+    }
+
+    .bandeiras-container {
+        font-size: .9rem;
+    }
+
+    
+    .dados-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: .5rem;
+    
+}
+.tabela-conta-luz, .tabelas-cosip { 
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-diferenca-variacao {
+
+    
+    width: 100%;
+    gap: 0;
+    /* justify-content: center; */
+}
+.cosip-atual h3, .tabela-conta-luz h3 {
+    text-align: left;
+}
+.about-cosipometro {
+    text-align: left;
+}
+.about-cosipometro h2 {
+    font-size: 2.5rem;
+}
+
+.about-cosipometro h3 {
+    font-size: 1.8rem;
+}
+
+.about-cosipometro p, .about-cosipometro li {
+    font-size: 1.2rem;
+}
+
+.redes-sociais {
+    gap: .4rem;
+}
+
+.redes-sociais a {
+
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+#banner-manifesto {
+    background-image: url("/img/banner-manifesto-tablet-2.png");
+    width: 100%;
+    /* max-width: 700px; */
+    /* padding: 0 28.5rem; */
+    max-height: 600px;
+    /* height: auto; */
+    margin: 3rem auto 0 auto;
+}
+
+
+
+#img-mobile {
+    display: flex;
+}
+
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        /* padding-bottom: 1rem; */
+        
+    }
+
+    header .header h1 {
+        font-size: 3rem;
+    }
+
+    header .header {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    header .header p {
+        font-size: 1.3rem;
+        /* text-align: center; */
+    }
+
+    header .input-section {
+        flex-direction: column;
+        border-radius: 2.5rem;
+        padding: 1.5rem 1.5rem;
+        align-items: center;
+    }
+
+    header .input-section input {
+        max-width: 100%;
+        padding: 1rem 4rem 1rem 1rem;
+        font-size: 1.1rem;
+        
+    }
+
+    header .input-section button {
+        max-width: 100%;
+        font-size: 1.1rem;
+        padding: .7rem;
+        /* width: 100px; */
+        
+    }
+
+
+    section {
+        margin: 0 0 2rem 0;
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    .bandeiras {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .bandeiras-container {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .bandeiras-container p {
+        margin: 2rem;
+        font-size: .9rem;
+    }
+
+
+
+
+
+    .bandeira-verde, .bandeira-amarelo, .bandeira-vermelha1, .bandeira-vermelha2 {
+        max-width: 100%;
+    }
+
+    .bandeiras-propriedades {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .tabela-conta-luz, .tabelas-cosip {
+        padding: 0 0 2rem 0;
+        max-width: 100%;
+    }
+
+    .coluna-dados img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .tabelas-cosip h3, .tabela-conta-luz h3 {
+        font-size: 1.6rem;
+    }
+
+    .bandeiras h2 {
+        font-size: 1.2rem;
+    }
+
+    .span-total-cosip {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 100;
+    /* margin: .5rem 0 0 1rem; */
+    color: #000;
+}
+    .valor {
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    /* margin: 0 auto; */
+    color: #404041;
+}
+
+
+.valor-diferenca {
+    /* font-size: 2rem; */
+    font-weight: 900;
+}
+.variacao-label {
+    display: block;
+}
+
+
+/* .total-cosip-field {
+    margin: 0 auto;
+    text-align: center;
+    /* align-items: ; 
+} */
+.container-diferenca-variacao {
+
+    
+    width: 100%;
+    justify-content: left;
+    gap: 0;
+}
+
+
+.about-cosipometro h2 {
+    font-size: 2rem;
+}
+
+.about-cosipometro h3 {
+    font-size: 1.5rem;
+}
+
+.about-cosipometro p, .about-cosipometro li {
+    font-size: 1rem;
+}
+
+
+#footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    
+
+}
+
+.footer-content {
+
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+
+#footer img {
+    max-width: 180px;
+
+}
+.redes-sociais {
+    gap: .4rem;
+}
+
+
+
+.redes-sociais a{
+    color: #fff;
+    font-size: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+
+}
+
+#banner-manifesto {
+    background-image: url("/img/banner-tarifaço-mobile.png");
+    width: 100%;
+    height: 180px;
+    margin: 3rem auto 0 auto;
+}
+
+header {
+    background-image: none;
+    padding: 0;
+}
+
+
+
+#img-mobile {
+    display: flex;
+    /* width: 100%; */
+    max-width: 500px;
+    height: auto;
+}
+
+}
